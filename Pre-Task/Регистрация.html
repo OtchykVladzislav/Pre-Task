@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front-End</title>
+	<link rel="stylesheet" href="Main.css" id="form">
+	<link rel="shortcut icon" href="images/itachi-uchiha.png" type="image/x-icon">
+</head>
+<body>
+	<button id="SwitchMode">Смена</button>
+	<div class="block">
+		<h1>Регистрация</h1>
+		<form method="GET">
+			<input type="name" placeholder="Login" onchange ="CheckLogin()" id="login" minlength="5" required>
+			<input type="password" placeholder="Password" onchange ="CheckPassword()" id="pass" minlength="8" required>
+			<input type="email" placeholder="Email" onchange ="CheckEmail()" id="mail" required>
+			<button id="registry" onclick="sendJSON()">Зарегистрироваться</button>
+		</form>
+	</div>
+	<script src="Script.js"></script>
+</body>
+</html>
